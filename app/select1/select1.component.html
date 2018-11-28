@@ -1,0 +1,18 @@
+<h4>Type of Bikes(Basic mat-select)</h4>
+<mat-form-field>
+  <mat-select placeholder="Favorite bike">
+    <mat-option *ngFor="let bike of bikes" [value]="bike.value">
+      {{bike.viewValue}}
+    </mat-option>
+  </mat-select>
+</mat-form-field>
+
+<h4>Cars(Basic native select)</h4>
+<mat-form-field>
+  <select matNativeControl required>
+    <option value="volvo">Volvo</option>
+    <option value="saab">Saab</option>
+    <option value="mercedes">Mercedes</option>
+    <option value="audi">Audi</option>
+  </select>
+</mat-form-field>
